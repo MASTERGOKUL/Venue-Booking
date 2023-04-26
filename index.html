@@ -39,6 +39,7 @@
       name="keywords"
       content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5"
     />
+    
     <!-- Canonical SEO -->
     <link
       rel="canonical"
@@ -125,6 +126,7 @@
         <script src="../../assets/vendor/js/template-customizer.js"></script>
         <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
         <script src="../../assets/js/config.js"></script>
+        
 </head>
       
       <body>
@@ -2045,348 +2047,379 @@
 
             <!-- Content -->
      
-            <div class="d-flex flex-column">
+            <div class="container-xxl flex-grow-1 container-p-y bg-primary">
               <!-- Select2 -->
-              <div class="col-12">
-                <div class="card" style="margin:80px 10px 10px 10px;background-image: url(../assets/img/pages/profile-banner.png);">
-                  <h1 class="card-header text-center m-3" style="color:rgb(65, 53, 53);font-family:'Gill Sans MT';font-weight:50px;">Book Your Venue...</h1>
+              <div class="row">
+                <div class="col-lg-12 order-0">
+                  <h1 class="card-header text-center m-3" style="color:rgb(255, 255, 255);font-family:'Gill Sans MT';font-weight:50px;">Book Your Venue...</h1>
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-12">
+                        <div class="card-body">
+                        <div class="row">
+                        <!-- Primary -->
+                        <div class="col-md-2 mb-4">
+                          <label for="select2Primary" class="form-label">Room Type</label>
+                          <div class="select2-primary">
+                            <select id="select2Primary" class="select2 form-select" multiple>
+                              <option value="1">Meeting Hall</option>
+                              <option value="2">SEMINAR HALL</option>
+                              <option value="3">CONFERENCE HALL</option>
+                              <option value="4">DISCUSSION ROOM</option>
+                              <option value="5" selected="selected">CLASS ROOM</option>
+                              <option value="6">AUDITORIUM</option>
+                              <option value="7">SMART CLASS ROOM</option>
+                              <option value="9">FACULTY HALL</option>
+                              <option value="10">HOD CABIN</option>
+                              <option value="11">PG CLASS ROOM</option>
+                              <option value="12">SPL LAB</option>
+                              <option value="13">VIP HALL</option>
+                            </select>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-2 mb-4">
+                          <label for="select2Success" class="form-label">Block</label>
+                          <div class="select2-success">
+                            <select id="select2Success" class="select2 form-select" multiple>
+                              <option value="1">Main Auditorium</option>
+                              <option value="2" selected>AS Block</option>
+                              <option value="3">IB Block</option>
+                              <option value="4">Research park</option>
+                              <option value="5">School of computing</option>
+                              <option value="6">School of mechanical science</option>
+                              <option value="7">Learning centre</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                          <label for="select2warning" class="form-label">Capacity</label>
+                          <div class="select2-warning">
+                            <select id="select2warning" class="select2 form-select">
+                              <option value="1" selected>0 to 10</option>
+                              <option value="2">10 to 40</option>
+                              <option value="3">40 to 100</option>
+                              <option value="4">100 to 200</option>
+                              <option value="5">200 to 300</option>
+                              <option value="6">300 to 700</option>
+                              <option value="7">700 to 1800</option>
+                             
+                            </select>
+                          </div>            
+                        </div>
+                        <div class="col-md-2 mb-4">
+                          <label for="bs-rangepicker-dropdown" class="form-label"> From: </label>
+                        <input
+                          type="datetime-local"
+                          id="bs-rangepicker-dropdown"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-md-2 mb-4">
+                        <label for="bs-rangepicker-dropdown" class="form-label">To:</label>
+                        <input
+                          type="datetime-local"
+                          id="bs-rangepicker-dropdown"
+                          class="form-control"
+                        />        
+                      </div>
+                         <div class="col-md-2 mt-1">
+                          <label for="select2warning" class="form-label"></label>
+                          <div class="select2-warning">
+                          <button type="button" class="btn btn-primary col-md-12 col-md-4 bg-primary text-white" >Search</button>       
+                        </div>
+                        </div>
+                      
+                      </div>
+                      
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+              <div class="col-lg-12 mt-5" >
+                <div class="card ">
+                  <h1 class="card-header text-center">Availability</h1>
+                  <div class="d-flex justify-content-evenly" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> 
+                    <div>
+                      <i class="bx bx-laptop"  style="font-size:2rem;" class="form-check-label"> </i> - System
+                    </div>
+                    <div>
+                    <i class="bx bxs-time-five " style="font-size:2rem;"></i> - Clock 
+                  </div>
+                  <div>
+                    <i class="bx bxs-cctv " style="font-size:2rem;"></i> - Projector 
+                  </div>
+                  <div>
+                  <i class="bx bxs-tv " style="font-size:2rem;"></i> - Screen 
+                </div>
+                <div>
+                    <i class="bx bxs-speaker " style="font-size:2rem;"></i> - Speaker 
+                  </div>
+                  <div>
+                    <i class='bx bxs-guitar-amp ' style="font-size:2rem;"></i> - Amplifier 
+                  </div>
+                  </div>
                   <div class="card-body">
-                    <!-- Primary -->
-                    <div class="d-flex justify-content-evenly align-items-center col-lg-10 ">
-                      <div class="d-flex">
-                      <label for="RoomType" class="form-label-lg m-2 text-white">Room Type</label>
-                      <div class="select2-primary">
-                        <select
-                          id="RoomType"
-                          default="hi"
-                          style="margin-left: 60px"
-                          class="select2 form-select-lg"
-                          multiple
-                        >
-                          <option value="1">Class Room</option>
-                          <option value="2">Seminar Hall</option>
-                          <option value="3">Auditorium</option>
-                        </select>
+                    <div class="row m-5 mt-0">
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 31</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1"  />
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                    <div class="d-flex">
-                      <label
-                        for="Block"
-                        class="form-label-lg m-2 text-white"
-                        >Block</label
-                      >
-                      <div class="select2-primary">
-                        <select
-                          id="Block"
-                          class="select2 form-select-lg"
-                          multiple
-                        >
-                          <option value="1">AS</option>
-                          <option value="2">IB</option>
-                          <option value="3">SF</option>
-                          <option value="3">Mech</option>
-                        </select>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon2">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 32</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five " ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv "></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp '></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input " type="checkbox" value="" id="customCheckboxIcon2"  />
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                    <div class="d-flex">
-                      <label for="Capacity" class="form-label-lg m-2 text-white"
-                        >Seating Capacity</label
-                      >
-                      <select
-                        id="Capacity"
-                        style="margin: 30px"
-                        class="select2 form-select"
-                        data-allow-clear="true"
-                      >
-                        <option value="1">0 - 50</option>
-                        <option value="2">50 - 200</option>
-                        <option value="3">200 - 1000</option>
-                        <option value="3">&gt; 1000</option>
-                      </select>
-                    </div>
-                      <div class="d-flex">
-                        <label for="bs-rangepicker-dropdown" class="form-label-lg m-2 text-white"> From: </label>
-                        <input
-                          type="datetime-local"
-                          id="bs-rangepicker-dropdown"
-                          class="form-control"
-                        />
-                        <label for="bs-rangepicker-dropdown" class="form-label-lg m-2 text-white">To:</label>
-                        <input
-                          type="datetime-local"
-                          id="bs-rangepicker-dropdown"
-                          class="form-control"
-                        />
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon3">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 33</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop " ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv "></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker "></i>
+                                <i class='bx bxs-guitar-amp '></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon3"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon4">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 34</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop " ></i>
+                                <i class="bx bxs-time-five " ></i>
+                                <i class="bx bxs-cctv "></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon4"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon5">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 35</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five " ></i>
+                                <i class="bx bxs-cctv "></i>
+                                <i class="bx bxs-tv "></i>
+                                <i class="bx bxs-speaker "></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon5"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon6">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 36</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five " ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp '></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon6" />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon7">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 37</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon7"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon8">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 38</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon8"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon9">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 39</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop " ></i>
+                                <i class="bx bxs-time-five " ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker "></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon9"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon10">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 40</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop " ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon10"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon11">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 41</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon11"  />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md md-0 mb-2 ">
+                        <div class="form-check custom-option custom-option-icon" style="background-color: rgb(79, 200, 162);">
+                          <label class="form-check-label custom-option-content" for="customCheckboxIcon42">
+                            <span class="custom-option-body">
+                              <span class="custom-option-title "> <h2 class="text-white">AG 42</h2></span>
+                              <small class="d-flex justify-content-evenly">
+                                <i class="bx bx-laptop text-white" ></i>
+                                <i class="bx bxs-time-five text-white" ></i>
+                                <i class="bx bxs-cctv text-white"></i>
+                                <i class="bx bxs-tv text-white"></i>
+                                <i class="bx bxs-speaker text-white"></i>
+                                <i class='bx bxs-guitar-amp text-white'></i>
+                              </small>
+                            </span>
+                            <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon42"  />
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- /Select2 -->
               </div>
+                <div class="card mt-5 p-5" style="background-image:url();">
+                  <div id="collapseDeliveryAddress" data-bs-parent="#collapsibleSection">
+                    <h2 style="text-align:center;margin-bottom:50px">Details Form</h2>
+                    <div class="accordion-body">
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label class="form-label" for="col0lapsible-fullname">Faculty ID</label>
+                          <input type="text" id="collapsible-fullname" class="form-control" placeholder="Enter ID" />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-phone">Event Title</label>
+                          <input type="text" id="collapsible-phone" class="form-control phone-mask" placeholder="Enter title" aria-label="658 799 8941" />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-landmark">Event ID</label>
+                          <input type="text" id="collapsible-landmark" class="form-control" placeholder="Enter Event ID" />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="collapsible-city">Contact No</label>
+                          <input type="tel" id="collapsible-city" class="form-control" placeholder="Enter No" />
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label" for="collapsible-address">Reason</label>
+                          <textarea name="collapsible-address" class="form-control" id="collapsible-address" rows="2" placeholder="Enter the Reason"></textarea>
+                          <button type="submit" class="btn btn-primary mt-5" style="background-color:#696cff;color:#fff;">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <br><br>
+                </div>
             </div>
             <!--/ Content -->
             <!-- availability -->
-            <div class="col-lg-12 mt-5" >
-              <div class="card">
-                <h1 class="card-header text-center">Availability</h1>
-                <div class="card-body">
-                  <div class="row m-5">
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 32 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 33 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-home"></i>
-                            <span class="custom-option-title"> AG 34 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 35 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row m-5">
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 32 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 33 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-home"></i>
-                            <span class="custom-option-title"> AG 34 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 35 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row m-5">
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 32 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 33 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-home"></i>
-                            <span class="custom-option-title"> AG 34 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 35 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md mb-md-0 mb-2">
-                      <div class="form-check custom-option custom-option-icon">
-                        <label class="form-check-label custom-option-content" for="customCheckboxIcon1">
-                          <span class="custom-option-body">
-                            <i class="bx bx-server"></i>
-                            <span class="custom-option-title"> AG 31 </span>
-                            <small class="d-flex"> <i class="bx bx-mic"></i><i class="bx bx-laptop"></i><i class="bx bx-speaker"></i></small>
-                          </span>
-                          <input class="form-check-input" type="checkbox" value="" id="customCheckboxIcon1" checked />
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="card p-5" style="background-image:url();">
-                <div id="collapseDeliveryAddress" data-bs-parent="#collapsibleSection">
-                  <h2 style="text-align:center;margin-bottom:50px">Details Form</h2>
-                  <div class="accordion-body">
-                    <div class="row g-3">
-                      <div class="col-md-6">
-                        <label class="form-label" for="col0lapsible-fullname">Faculty ID</label>
-                        <input type="text" id="collapsible-fullname" class="form-control" placeholder="Enter ID" />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="collapsible-phone">Event Title</label>
-                        <input type="text" id="collapsible-phone" class="form-control phone-mask" placeholder="Enter title" aria-label="658 799 8941" />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="collapsible-landmark">Event ID</label>
-                        <input type="text" id="collapsible-landmark" class="form-control" placeholder="Enter Event ID" />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="collapsible-city">Contact No</label>
-                        <input type="tel" id="collapsible-city" class="form-control" placeholder="Enter No" />
-                      </div>
-                      <div class="col-12">
-                        <label class="form-label" for="collapsible-address">Reason</label>
-                        <textarea name="collapsible-address" class="form-control" id="collapsible-address" rows="2" placeholder="Enter the Reason"></textarea>
-                        <button type="submit" class="btn btn-primary mt-5" style="background-color:#696cff;color:#fff;">Submit</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br><br>
-                <br><br>
-              </div>
           </div>
           </div>
           <!--/ Content wrapper -->
