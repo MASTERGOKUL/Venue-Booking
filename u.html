@@ -1,13 +1,59 @@
 <!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/item/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="horizontal-menu-template">
 
   
-<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template/forms-selects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 04:29:49 GMT -->
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template/dashboards-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 04:28:56 GMT -->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Selects and tags - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
     
     <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
@@ -44,19 +90,10 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css" />
     <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css" />
-<link rel="stylesheet" href="../../assets/vendor/libs/tagify/tagify.css" />
-<link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
-<link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
-    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
-<link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
-<link rel="stylesheet" href="../../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
-<link rel="stylesheet" href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
-<link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css" />
-<!-- Row Group CSS -->
-<link rel="stylesheet" href="../../assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
-<!-- Form Validation -->
-<link rel="stylesheet" href="../../assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+
 
     <!-- Page CSS -->
     
@@ -95,7 +132,7 @@
   
 
   
-  <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
     <div class="container-xxl">
       
 
@@ -433,7 +470,6 @@
 </nav>
 
 <!-- / Navbar -->
-
     
 
     <!-- Layout container -->
@@ -450,193 +486,272 @@
 
 <!-- Menu -->
 <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal  menu bg-menu-theme flex-grow-0">
-  <div class="container-xxl d-flex h-100">
-    
-    
-    <ul class="menu-inner">
-
-      <!-- Dashboards -->
-      <li class="menu-item">
-        <a href="index.html" class="menu-link">
-          <div data-i18n="Dashboards">Dashboards</div>
-        </a>
-      </li>
-      <!-- class room -->
-      <li class="menu-item active">
-        <a href="cr.html" class="menu-link">
-          <div data-i18n="Class Room">Class Room</div>
-        </a>
-      </li>
-      <!-- Booking Aproval -->
-      <li class="menu-item">
-        <a href="ba.html" class="menu-link">
-          <div data-i18n="Booking Aproval">Booking Aproval</div>
-        </a>
-      </li>
-      <!-- Venue Booking -->
-      <li class="menu-item">
-        <a href="vb.html" class="menu-link">
-          <div data-i18n="Venue Booking">Venue Booking</div>
-        </a>
-      </li>
-            <!-- Uitility -->
-            <li class="menu-item">
-              <a href="u.html" class="menu-link">
-                <div data-i18n="Utility">Utility</div>
-              </a>
-            </li>
-
-    </ul>
-    
-    
-  </div>
-</aside>
-<!-- / Menu -->
+    <div class="container-xxl d-flex h-100">
+      
+      
+      <ul class="menu-inner">
+  
+        <!-- Dashboards -->
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">
+            <div data-i18n="Dashboards">Dashboards</div>
+          </a>
+        </li>
+        <!-- class room -->
+        <li class="menu-item ">
+          <a href="cr.html" class="menu-link">
+            <div data-i18n="Class Room">Class Room</div>
+          </a>
+        </li>
+        <!-- Booking Aproval -->
+        <li class="menu-item">
+          <a href="ba.html" class="menu-link">
+            <div data-i18n="Booking Aproval">Booking Aproval</div>
+          </a>
+        </li>
+        <!-- Venue Booking -->
+        <li class="menu-item">
+          <a href="vb.html" class="menu-link">
+            <div data-i18n="Venue Booking">Venue Booking</div>
+          </a>
+        </li>
+        <!-- Uitility -->
+        <li class="menu-item active">
+          <a href="u.html" class="menu-link">
+            <div data-i18n="Utility">Utility</div>
+          </a>
+        </li>
+  
+      </ul>
+      
+      
+    </div>
+  </aside>
+  <!-- / Menu -->
 
         
         <!-- Content -->
         
           <div class="container-xxl flex-grow-1 container-p-y bg-primary">
             
-<center>          
-  <h4 class="fw-bold py-3 mb-4" style="color:#ffffff;">
-    Manage Class 
-  </h4>
-</center>
+            
+
+<div class="row">
+  <div class="col-lg-12 mb-4 order-0">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-sm-12">
+          <div class="card-body">
+          <div class="row">
+          <!-- Primary -->
+          <div class="col-md-3 mb-4">
+            <label for="select2Primary" class="form-label">Room Type</label>
+            <div class="select2-primary">
+              <select id="select2Primary" class="select2 form-select" multiple>
+                <option value="1">Meeting Hall</option>
+                <option value="2">SEMINAR HALL</option>
+                <option value="3">CONFERENCE HALL</option>
+                <option value="4">DISCUSSION ROOM</option>
+                <option value="5" selected="selected">CLASS ROOM</option>
+                <option value="6">AUDITORIUM</option>
+                <option value="7">SMART CLASS ROOM</option>
+                <option value="9">FACULTY HALL</option>
+                <option value="10">HOD CABIN</option>
+                <option value="11">PG CLASS ROOM</option>
+                <option value="12">SPL LAB</option>
+                <option value="13">VIP HALL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <label for="select2Success" class="form-label">Block</label>
+            <div class="select2-success">
+              <select id="select2Success" class="select2 form-select" multiple>
+                <option value="1">Main Auditorium</option>
+                <option value="2" selected>AS Block</option>
+                <option value="3">IB Block</option>
+                <option value="4">Research park</option>
+                <option value="5">School of computing</option>
+                <option value="6">School of mechanical science</option>
+                <option value="7">Learning centre</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <label for="select2warning" class="form-label">Date</label>
+            <div class="select2-warning">
+             <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="form-control"/>
+            </div>            
+          </div>
+           <div class="col-md-3 mb-4">
+            <label for="select2warning" class="form-label"></label>
+            <div class="select2-warning">
+            <button type="button" class="btn btn-primary col-md-12 col-md-4">Search</button>       
+          </div>
+          </div>
+        
+        </div>
+        
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+ 
+  <!-- Total Revenue -->
+
+  <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
+    <div class="row">
+     <div class="col-md-3 col-lg-3 order-1 mb-4">
+      <div class="card">
+         <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="card-info">
+                 <p class="card-text">Utilization</p>
+                 <div class="d-flex align-items-end mb-2">
+                 <h4 class="card-title mb-0 me-2">62Hrs</h4>              
+                </div>
+              </div>
+              <div class="card-icon">
+                  <span class="badge bg-label-danger rounded p-2">
+                     <i class="bx bx-pie-chart-alt bx-lg"></i>
+                  </span>
+              </div>
+            </div>
+         </div>    
+      </div>
+    </div>
+      <div class="col-md-3 col-lg-3 order-1 mb-4">
+      <div class="card">
+         <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="card-info">
+                 <p class="card-text">No of Rooms</p>
+                 <div class="d-flex align-items-end mb-2">
+                 <h4 class="card-title mb-0 me-2">25</h4>              
+                </div>
+              </div>
+              <div class="card-icon">
+                  <span class="badge bg-label-danger rounded p-2">
+                     <i class="bx bx-pie-chart-alt bx-lg"></i>
+                  </span>
+              </div>
+            </div>
+         </div>    
+      </div>
+    </div>
+
+    <div class="col-md-3 col-lg-3 order-1 mb-4">
+      <div class="card bg-success text-white mb-3">
+         <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="card-info">
+                 <p class="card-text">Request</p>
+                 <div class="d-flex align-items-end mb-2">
+                 <h4 class="card-title mb-0 me-2">22</h4>              
+                </div>
+              </div>
+              <div class="card-icon">
+                  <span class="badge bg-label-danger rounded p-2">
+                     <i class="bx bx-edit-alt bx-lg"></i>
+                  </span>
+              </div>
+            </div>
+         </div>    
+      </div>
+    </div>
+    
+      <div class="col-md-3 col-lg-3 order-1 mb-4">
+      <div class="card bg-danger text-white mb-3">
+         <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="card-info">
+                 <p class="card-text">Booking</p>
+                 <div class="d-flex align-items-end mb-2">
+                 <h4 class="card-title mb-0 me-2">22</h4>              
+                </div>
+              </div>
+              <div class="card-icon">
+                  <span class="badge bg-label-danger rounded p-2">
+                     <i class="bx bx-lock-alt bx-lg"></i>
+                  </span>
+              </div>
+            </div>
+         </div>    
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
 
 <div class="row">
 
-  <!-- class feeding form -->
-  <div class="col-md-4">
-    <div class="card mb-4">
-      <h5 class="card-header">Add Venue</h5>
-      <div class="card-body">
-        <div class="row">
-          <!-- Name -->
-          <div class="col-md-12 mb-4">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter the Venue Name" aria-describedby="floatingInputHelp">
-          </div>
-           <!-- Block -->
-           <div class="col-md-12 mb-4">
-            <label for="select2" class="form-label">Block</label>
-            <select id="select2" class="select2 form-select" >
-              <option value="1">IB</option>
-              <option value="2" selected>AS</option>
-              <option value="3">School of Computing</option>
-              <option value="4">Mechanical</option>
-              <option value="5">Main Block</option>
-            </select>
-          </div>
-      <!-- Name -->
-            <div class="col-md-12 mb-4">
-              <label for="capacity" class="form-label">Capacity</label>
-              <input type="text" class="form-control" id="capacity" placeholder="Enter the Capacity" aria-describedby="floatingInputHelp">
+  <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
+    <div class="card">
+      <div class="row row-bordered g-0">
+        <div class="col-md-8">
+          <h5 class="card-header m-0 me-2 pb-3">Total Utilization</h5>
+          <div id="totalRevenueChart" class="px-2"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <div class="text-center">
+              <div class="dropdown">
+                <button class="btn btn-sm btn-label-primary dropdown-toggle" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  2022
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
+                  <a class="dropdown-item" href="javascript:void(0);">May</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Jun</a>
+                  <a class="dropdown-item" href="javascript:void(0);">July</a>
+                </div>
+              </div>
             </div>
-          <!-- Multiple -->
-          <div class="col-md-12 mb-4">
-            <label for="select2Multiple" class="form-label">Facility</label>
-            <div class="select2-primary">
-            <select id="select2Multiple" class="select2 form-select" multiple>
-                <option value="S">Speaker</option>
-                <option value="P">Projector</option>
-                <option value="PS">Projector Screen</option>
-                <option value="SM">System</option>
-                <option value="C">Clock</option>
-                <option value="A">Amplifier</option>
-            </select>
           </div>
-          </div>
-         
-          <hr style="border-style:dashed;border-color:#696cff">
-          <br>
-          <button class="btn btn-secondary buttons-collection dropdown-toggle btn-label-primary me-2" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog" aria-expanded="false"><span><i class="bx bx-import me-sm-1"></i> <span class="d-none d-sm-inline-block">Import</span></span></button>
-          <br>
+          <div id="growthChart"></div>
+          <div class="text-center fw-semibold pt-3 mb-2">62% more in last few days</div>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- /class feeding form -->
-  <!-- class list -->
-  <div class="col-md-8">
-    <div class="card mb-4">
-      <h5 class="card-header">Class List</h5>
-      <div class="card-body">
-        <div class="card-datatable table-responsive">
-          <table class="datatables-basic table border-top">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Id</th>
-                <th></th>
-                <th>Block</th>
-                <th>Name</th>
-                <th>Capacity</th>
-                <th>Facility</th>
-                <th>Action</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td>1</td>
-                <td></td>
-                <td>IB</td>
-                <td>IB102</td>
-                <td>60</td>
-                <td>speaker | projector | system | clock</td>
-                <td><i class="bx bx-edit text-primary" style="font-size: 2rem;cursor:pointer;">&nbsp;<i class="text-danger" style="font-size: 3rem;font-weight:1000;">&times;</i></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>1</td>
-                <td></td>
-                <td>IB</td>
-                <td>IB102</td>
-                <td>60</td>
-                <td>speaker | projector | system | clock</td>
-                <td><i class="bx bx-edit text-primary" style="font-size: 2rem;cursor:pointer;">&nbsp;<i class="text-danger" style="font-size: 3rem;font-weight:1000;">&times;</i></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>2</td>
-                <td></td>
-                <td>IB</td>
-                <td>IB102</td>
-                <td>60</td>
-                <td>speaker | projector | system | clock</td>
-                <td><i class="bx bx-edit text-primary" style="font-size: 2rem;cursor:pointer;">&nbsp;<i class="text-danger" style="font-size: 3rem;font-weight:1000;">&times;</i></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>2</td>
-                <td></td>
-                <td>School of Computing</td>
-                <td>SF Seminar Hall 2</td>
-                <td>60</td>
-                <td>speaker | projector | system | clock</td>
-                <td><i class="bx bx-edit text-primary" style="font-size: 2rem;cursor:pointer;">&nbsp;<i class="text-danger" style="font-size: 3rem;font-weight:1000;">&times;</i></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>2</td>
-                <td></td>
-                <td>IB</td>
-                <td>IB102</td>
-                <td>60</td>
-                <td>speaker | projector | system | clock</td>
-                <td><i class="bx bx-edit text-primary" style="font-size: 2rem;cursor:pointer;">&nbsp;<i class="text-danger" style="font-size: 3rem;font-weight:1000;">&times;</i></td>
-              </tr>
-              <tr> 
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+  <!-- Total Revenue -->
+  <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
+     <div class="col-md-12 col-lg-12 order-1 mb-4">
+    <div class="card">
+      
+      <div class="card-body px-0">
+        <div class="tab-content p-0">
+          <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
+            <div class="d-flex p-4 pt-3">
+              <div class="avatar flex-shrink-0 me-3">
+                <img src="../../assets/img/icons/unicons/surface.png" alt="User">
+              </div>
+              <div>
+                <h2 class="text-muted d-block">Total Utilization</h2>
+                <div class="d-flex align-items-center">
+                  <h6 class="mb-0 me-1">62 Hrs</h6>
+                  
+                </div>
+              </div>
+            </div>
+            <div id="incomeChart"></div>
+            
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- /class list -->
 
+  </div>
 
+</div>
 
 </div>
 
@@ -647,6 +762,8 @@
 
           
           
+
+
           
           <div class="content-backdrop fade"></div>
         </div>
@@ -670,6 +787,7 @@
   <!--/ Layout wrapper -->
 
   
+ 
 
   
 
@@ -688,7 +806,14 @@
   <!-- endbuild -->
 
   <!-- Vendors JS -->
-  <script src="../../assets/vendor/libs/select2/select2.js"></script>
+  <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+  <!-- Main JS -->
+  <script src="../../assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../../assets/js/dashboards-analytics.js"></script>
+   <script src="../../assets/vendor/libs/select2/select2.js"></script>
 <script src="../../assets/vendor/libs/tagify/tagify.js"></script>
 <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
 <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
@@ -701,13 +826,25 @@
   <script src="../../assets/js/forms-selects.js"></script>
 <script src="../../assets/js/forms-tagify.js"></script>
 <script src="../../assets/js/forms-typeahead.js"></script>
- <script src="../../assets/js/tables-datatables-basic.js"></script>
-  <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  
   
 </body>
 
 
-<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template/forms-selects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 04:29:51 GMT -->
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template/dashboards-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 04:28:56 GMT -->
 </html>
 
 <!-- beautify ignore:end -->
+
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
